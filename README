@@ -5,7 +5,7 @@ Backup data on FTP server to Raspberry Pi and ExternalHd which is connected to R
 ### Inatallation
 
 ```sh
-pip install ftprasp
+pip install ftprasp==0.0.3
 ```
 ### How to use....
 
