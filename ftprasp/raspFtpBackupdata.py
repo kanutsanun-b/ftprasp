@@ -7,7 +7,6 @@ import time
 import reconnecting_ftp
 from datetime import datetime
 
-print('Start Backup Process.......................................................................')
 
 class ftprasp:
 
@@ -19,7 +18,8 @@ class ftprasp:
         self.mainRasp = mainRaspberry
         self.mainExternalhd = mainExternalhd
         self.copyright = "Copyright (c) Kanutsanun Bouking"
-
+        self.introstart = 'Start Backup Process......................................................'
+        print(self.introstart)
         print(self.copyright)
 
         '''mainRaspberry = Mainpath to backup data on Raspberry Pi sd card
