@@ -32,7 +32,7 @@ class ftprasp:
     
     def process_Raspberry(self, dirFTP, dirLOCAL):
 
-        print('Start backup to Raspberry Pi............................................................')
+        print('Start backup %s to Raspberry Pi............................................................' %dirFTP)
         localpath = self.mainRasp+'/'+dirLOCAL+'/'
         localfiles = os.listdir(localpath)
         #print(localfiles)
@@ -94,7 +94,7 @@ class ftprasp:
 
     def process_ExternalHd(self, dirFTP, dirLOCAL):
 
-        print('Start backup to ExternalHd.......................................................................................')
+        print('Start backup %s to ExternalHd.......................................................................................' %dirFTP)
         localpath = self.mainExternalhd+'/'+dirLOCAL+'/'
         localfiles = os.listdir(localpath)
 
@@ -155,7 +155,7 @@ class ftprasp:
               
 if __name__=='__main__':
     
-    obj = ftprasp(hostname='', user='', password='', port=21, mainRaspberry="", mainExternalhd="")
-    print(obj)
-    obj.process_Raspberry(dirFTP='', dirLOCAL='')
-    obj.process_ExternalHd(dirFTP='', dirLOCAL='')
+    # obj = ftprasp(hostname='', user='', password='', port=21, mainRaspberry="", mainExternalhd="")
+    # print(obj)
+    # obj.process_Raspberry(dirFTP='', dirLOCAL='')
+    # obj.process_ExternalHd(dirFTP='', dirLOCAL='')
