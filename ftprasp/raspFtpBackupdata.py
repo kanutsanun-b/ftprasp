@@ -94,7 +94,7 @@ class ftprasp:
 
     def process_ExternalHd(self, dirFTP, dirLOCAL):
 
-        print('Start backup %s to ExternalHd.......................................................................................' %dirFTP)
+        print('Start backup %s to ExternalHd..............................................................................' %dirFTP)
         localpath = self.mainExternalhd+'/'+dirLOCAL+'/'
         localfiles = os.listdir(localpath)
 
@@ -150,12 +150,3 @@ class ftprasp:
                 print("{} was removed from ExternalHd".format(file))
         else:
             print("Nothings change")
-
-  
-              
-if __name__=='__main__':
-    
-    # obj = ftprasp(hostname='', user='', password='', port=21, mainRaspberry="", mainExternalhd="")
-    # print(obj)
-    # obj.process_Raspberry(dirFTP='', dirLOCAL='')
-    # obj.process_ExternalHd(dirFTP='', dirLOCAL='')
